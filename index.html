@@ -48,13 +48,23 @@
             <li>List Item</li>
             <li>List Item</li>
         </ul>
+        <input type="button" value="Button 1" >
+        <input type="submit" value="Submit" >
+        <input type="text" >
+
+        <a href="https://google.com">Google</a>
+        <a href="https://yahoo.com">Yahoo</a>
     </div>
     <script>
       //  $("h1").hide();
       //  $("h1#heading1").hide();
        // $(".heading2").hide();
     //   $("p span").css("color", "red");
-        $("ul#list li:first").css("color", "blue");
+      //  $("ul#list li:first").css("color", "blue");
+         //   $(":button").hide();
+
+         $("[href]").css("color", "red");
+         $('a[href="https://yahoo.com"]').css('color', 'blue');
 
     </script>
 </body>
