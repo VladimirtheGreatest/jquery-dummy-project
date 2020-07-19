@@ -92,7 +92,10 @@
         <li>Lis 3</li>
         <li>Lisr 4</li>
       </ul>
-       
+
+
+      <ul id="users"></ul>
+       <a href="www.google.com"></a>
     </div>
     <script>
       //  $("h1").hide();
@@ -120,9 +123,20 @@
             $('.para5').prependTo('.para4');
             $('ul').before('<h4>Hello</h4>');
             $('ul').after('<h4>Hello</h4>');
+           // $('ul').empty();
+          // $('ul').detach();
+        // $('a').attr('target', '_blank');
+          //  $('a').removeAttr('target');
+          $('p').wrap('<h1>');
         });
 
-      
+        var myArr = ['Vlad', 'Tom', 'Pete', 'Jose'];
+
+        $.each(myArr, function(i, val){
+          $('#users').append('<li>'+val+'</li>')
+        })
+
+       // https://www.youtube.com/watch?v=q4FWSdX55ls
 
 
         //  $("#btn1").click(function(){
