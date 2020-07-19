@@ -25,6 +25,9 @@
         margin: auto;
         padding: 10px;
       }
+      .myClass {
+        background-color: blue;
+      }
     </style>
   </head>
   <body>
@@ -77,6 +80,18 @@
 
       </form>
      
+
+      <button id="btn3">Button 1</button>
+      <p class="para4">Paragraph</p>
+      <p class="para5">Another one</p>
+      <div id="mydiv"></div>
+
+      <ul>
+        <li>List 1</li>
+        <li>Lis 2</li>
+        <li>Lis 3</li>
+        <li>Lisr 4</li>
+      </ul>
        
     </div>
     <script>
@@ -91,6 +106,25 @@
       $('a[href="https://yahoo.com"]').css("color", "blue");
 
       $(document).ready(function() {
+        $("p.para4").css({"color": "red", background : "#ccc"});
+
+        $("#btn3").click(function(){
+           // $("p.para5").toggleClass("myClass")
+          //  $("#mydiv").text("Hello World");
+           // $("#mydiv").html('<h3>Hey there</h3>');
+          //  alert($('#mydiv').text());
+            $('ul').append('<li>Append list item</li>');
+            $('ul').prepend('<li>Prepend list item</li>');
+            $('.para5').appendTo('.para4');
+           // $('.para5').appendTo('.para4');
+            $('.para5').prependTo('.para4');
+            $('ul').before('<h4>Hello</h4>');
+            $('ul').after('<h4>Hello</h4>');
+        });
+
+      
+
+
         //  $("#btn1").click(function(){
         //  $("#btn1").hide();
         /*    $("#btn1").on("click", function(){
@@ -156,7 +190,6 @@
           console.log(name);
         });
 
-        
     </script>
   </body>
 </html>
